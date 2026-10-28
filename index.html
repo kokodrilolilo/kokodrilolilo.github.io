@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qaytu Amigurumi · Tejido con amor, punto por punto</title>
+  <meta name="description" content="Amigurumis tejidos a mano en algodón 100% en Cajamarca. Recuerdos para bautizo, comunión, matrimonio, nacimientos y adornos navideños. Pedidos por WhatsApp al 943 772 313.">
+  <meta property="og:title" content="Qaytu Amigurumi">
+  <meta property="og:description" content="Amigurumis tejidos a mano en Cajamarca. Pedidos por WhatsApp.">
+  <meta property="og:image" content="assets/img/flyer.webp">
+  <meta name="theme-color" content="#FBF3E6">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261028">
+  <script defer src="main.js?v=20261028"></script>
+</head>
+<body>
+
+  <!-- Pantalla de bienvenida (se oculta sola aunque falle el JS) -->
+  <div class="splash" aria-hidden="true">
+    <div class="splash__ball"><img src="assets/img/logo.png" alt=""></div>
+    <p class="splash__word"><span>Q</span><span>a</span><span>y</span><span>t</span><span>u</span></p>
+    <span class="splash__thread"></span>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <a class="skip" href="#coleccion">Saltar a la colección</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top" aria-label="Qaytu Amigurumi, inicio">
+      <img src="assets/img/logo.png" alt="" width="52" height="52">
+      <span>Qaytu</span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#ocasiones">Recuerdos</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#nacimientos">Nacimientos</a>
+      <a href="#proceso">Cómo pedir</a>
+      <a href="#historia">Nosotros</a>
+    </nav>
+    <a class="btn btn--small" href="https://wa.me/51943772313?text=Hola%20Qaytu%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#ocasiones">Recuerdos</a>
+    <a href="#coleccion">Colección</a>
+    <a href="#nacimientos">Nacimientos</a>
+    <a href="#proceso">Cómo pedir</a>
+    <a href="#historia">Nosotros</a>
+    <a class="btn" href="https://wa.me/51943772313?text=Hola%20Qaytu%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <svg class="hero__thread" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-20,420 C180,300 260,560 470,470 C680,380 600,160 820,190 C1040,220 980,470 1180,430 C1320,400 1380,260 1470,240" />
+      </svg>
+      <div class="floaters" aria-hidden="true">
+        <i class="yarn f1"></i><i class="yarn f2"></i><i class="yarn f3"></i>
+        <i class="heart f4">♥</i><i class="heart f5">♥</i><i class="heart f6">♥</i>
+        <i class="spark f7">✿</i><i class="spark f8">✿</i>
+      </div>
+
+      <div class="hero__text">
+        <p class="eyebrow">Amigurumi hecho a mano · Cajamarca</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Tejido</span></span>
+          <span class="line"><span>con <em>amor,</em></span></span>
+          <span class="line"><span>punto por punto.</span></span>
+        </h1>
+        <p class="hero__lead">Muñequitos, recuerdos y adornos tejidos a crochet en algodón 100%. Cada pieza nace en nuestras manos, pensada para la persona que la va a recibir.</p>
+        <div class="hero__cta">
+          <a class="btn" href="https://wa.me/51943772313?text=Hola%20Qaytu%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.2 3.6c-.5.4-1.3.1-1.3-.6V16A2.5 2.5 0 0 1 4 13.5z"/></svg>
+            Hacer un pedido
+          </a>
+          <a class="btn btn--ghost" href="#coleccion">Ver la colección</a>
+        </div>
+      </div>
+
+      <div class="hero__collage" aria-label="Algunos de nuestros trabajos">
+        <figure class="polaroid p1"><img src="assets/img/novios.png" alt="Pareja de novios amigurumi, él con terno negro y ella con vestido blanco y ramo de tulipanes" fetchpriority="high"><figcaption>Para su boda</figcaption></figure>
+        <figure class="polaroid p2"><img src="assets/img/angelitos.webp" alt="Grupo de angelitos tejidos con aureola dorada, recuerdos de bautizo"><figcaption>Recuerdos de bautizo</figcaption></figure>
+        <figure class="polaroid p3"><img src="assets/img/reno.png" alt="Reno amigurumi con nariz roja y bufanda"><figcaption>Navidad</figcaption></figure>
+        <span class="stamp" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#circ">100% ALGODÓN · HECHO A MANO · </textPath></text></svg>
+          <b>♥</b>
+        </span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Bautizos</span><i>✿</i><span>Primera comunión</span><i>✿</i><span>Matrimonios</span><i>✿</i><span>Muñecos</span><i>✿</i><span>Nacimientos</span><i>✿</i><span>Navidad</span><i>✿</i><span>Llaveros</span><i>✿</i><span>Flores tejidas</span><i>✿</i>
+        <span>Bautizos</span><i>✿</i><span>Primera comunión</span><i>✿</i><span>Matrimonios</span><i>✿</i><span>Muñecos</span><i>✿</i><span>Nacimientos</span><i>✿</i><span>Navidad</span><i>✿</i><span>Llaveros</span><i>✿</i><span>Flores tejidas</span><i>✿</i>
+      </div>
+    </div>
+
+    <!-- ============ OCASIONES ============ -->
+    <section class="section occasions" id="ocasiones">
+      <header class="section__head reveal">
+        <p class="eyebrow">Recuerdos para cada ocasión</p>
+        <h2>Un detalle que <em>se queda</em> en casa mucho después de la fiesta.</h2>
+        <p>Tejemos recuerdos por docena o en pieza única, con los colores, nombres y detalles de tu celebración.</p>
+      </header>
+
+      <div class="occasions__grid">
+        <article class="occ reveal">
+          <div class="occ__img"><img src="assets/img/angelitos.webp" alt="Angelitos tejidos en fila con aureolas doradas" loading="lazy"></div>
+          <span class="occ__num">01</span>
+          <h3>Bautizo</h3>
+          <p>Angelitos con aureola dorada, en las cantidades que necesites para tus invitados.</p>
+        </article>
+        <article class="occ reveal">
+          <div class="occ__img"><img src="assets/img/llavero-angel.png" alt="Llavero de ángel blanco con borde dorado" loading="lazy"></div>
+          <span class="occ__num">02</span>
+          <h3>Primera comunión</h3>
+          <p>Llaveros de ángel en blanco y dorado: livianos, prácticos y fáciles de llevar siempre.</p>
+        </article>
+        <article class="occ reveal">
+          <div class="occ__img"><img src="assets/img/novios.png" alt="Muñecos de novios amigurumi" loading="lazy"></div>
+          <span class="occ__num">03</span>
+          <h3>Matrimonio</h3>
+          <p>Los novios tejidos a su imagen: el cabello, la barba, el vestido, el ramo.</p>
+        </article>
+        <article class="occ reveal">
+          <div class="occ__img"><img src="assets/img/tulipanes.png" alt="Ramo de tulipanes rosados tejidos en florero blanco" loading="lazy"></div>
+          <span class="occ__num">04</span>
+          <h3>Regalos y flores</h3>
+          <p>Ramos que no se marchitan. Para un aniversario, un cumpleaños o simplemente porque sí.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ COLECCIÓN ============ -->
+    <section class="section collection" id="coleccion">
+      <header class="section__head section__head--row reveal">
+        <div>
+          <p class="eyebrow">La colección</p>
+          <h2>Hecho a mano, <em>uno por uno.</em></h2>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filtrar colección">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Todo</button>
+          <button class="chip" data-filter="munecos" role="tab" aria-selected="false">Muñecos</button>
+          <button class="chip" data-filter="recuerdos" role="tab" aria-selected="false">Recuerdos</button>
+          <button class="chip chip--xmas" data-filter="navidad" role="tab" aria-selected="false"><span class="lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="tree" aria-hidden="true">🎄</span>Navidad</button>
+          <button class="chip" data-filter="nacimientos" role="tab" aria-selected="false">Nacimientos</button>
+          <button class="chip" data-filter="flores" role="tab" aria-selected="false">Flores</button>
+        </div>
+      </header>
+
+      <aside class="xmas-banner reveal">
+        <div class="snow" aria-hidden="true"><i>❄</i><i>❅</i><i>❆</i><i>❄</i><i>❅</i><i>❆</i><i>❄</i><i>❅</i><i>❆</i><i>❄</i></div>
+        <div>
+          <p class="xmas-banner__tag">Temporada navideña 🎄</p>
+          <h3>Esta Navidad, regala algo <em>tejido a mano.</em></h3>
+          <p>Esferas para el árbol, duendes, muñecos de nieve, renos y nacimientos completos. Tejidos con algodón 100% y hechos a pedido: haz tu pedido con tiempo para tenerlo listo antes del 24.</p>
+        </div>
+        <div class="xmas-banner__actions">
+          <button class="btn btn--xmas" data-show="navidad">Ver Navidad</button>
+          <a class="xmas-banner__link" href="https://wa.me/51943772313?text=Hola%20Qaytu%2C%20quiero%20hacer%20un%20pedido%20navide%C3%B1o" target="_blank" rel="noopener">Hacer mi pedido navideño →</a>
+        </div>
+      </aside>
+
+      <div class="gallery" id="gallery">
+        <button class="tile" data-cat="munecos"><img src="assets/img/hw-merlina.jpg" alt="Merlina amigurumi con trenzas y uniforme negro" loading="lazy"><span>Merlina</span></button>
+        <button class="tile" data-cat="munecos"><img src="assets/img/hw-rey-calabaza.jpg" alt="Rey Calabaza amigurumi con cabeza de calabaza naranja" loading="lazy"><span>Rey Calabaza</span></button>
+        <button class="tile" data-cat="munecos"><img src="assets/img/hw-jack-zero.jpg" alt="Jack y Zero amigurumi" loading="lazy"><span>Jack y Zero</span></button>
+        <button class="tile" data-cat="munecos"><img src="assets/img/hw-sally.jpg" alt="Sally amigurumi" loading="lazy"><span>Sally</span></button>
+        <button class="tile" data-cat="munecos"><img src="assets/img/hw-oogie-boogie.jpg" alt="Oogie Boogie amigurumi" loading="lazy"><span>Oogie Boogie</span></button>
+        <button class="tile" data-cat="munecos"><img src="assets/img/hw-enid.jpg" alt="Enid amigurumi" loading="lazy"><span>Enid</span></button>
+        <button class="tile" data-cat="munecos"><img src="assets/img/hw-bianca.jpg" alt="Bianca amigurumi" loading="lazy"><span>Bianca</span></button>
+        <button class="tile" data-cat="recuerdos"><img src="assets/img/novios.png" alt="Novios amigurumi" loading="lazy"><span>Novios personalizados</span></button>
+        <button class="tile" data-cat="navidad"><img src="assets/img/esferas-navidad.webp" alt="Esferas navideñas tejidas: pingüino, galleta, Papá Noel, Mamá Noel, Grinch y reno" loading="lazy"><span>Esferas navideñas</span></button>
+        <button class="tile" data-cat="nacimientos"><img src="assets/img/nacimiento-camellos.webp" alt="Nacimiento completo con reyes magos y camellos" loading="lazy"><span>Nacimiento con camellos</span></button>
+        <button class="tile" data-cat="navidad"><img src="assets/img/reno.png" alt="Reno amigurumi" loading="lazy"><span>Reno</span></button>
+        <button class="tile" data-cat="recuerdos"><img src="assets/img/angelitos.webp" alt="Angelitos de bautizo" loading="lazy"><span>Angelitos de bautizo</span></button>
+        <button class="tile" data-cat="flores"><img src="assets/img/tulipanes.png" alt="Tulipanes tejidos" loading="lazy"><span>Ramo de tulipanes</span></button>
+        <button class="tile" data-cat="navidad"><img src="assets/img/duendes.jpg" alt="Cuatro duendes navideños sentados" loading="lazy"><span>Duendes sentados</span></button>
+        <button class="tile" data-cat="nacimientos"><img src="assets/img/nacimiento-clasico.png" alt="Nacimiento clásico de colores" loading="lazy"><span>Nacimiento clásico</span></button>
+        <button class="tile" data-cat="navidad"><img src="assets/img/muneco-sombrero.png" alt="Muñeco de nieve con sombrero de copa y tirantes" loading="lazy"><span>Muñeco de nieve elegante</span></button>
+        <button class="tile" data-cat="recuerdos"><img src="assets/img/llavero-angel.png" alt="Llavero de ángel" loading="lazy"><span>Llavero de ángel</span></button>
+        <button class="tile" data-cat="navidad"><img src="assets/img/duendes-cascabel.png" alt="Pareja de duendes con cascabel" loading="lazy"><span>Duendes con cascabel</span></button>
+        <button class="tile" data-cat="nacimientos"><img src="assets/img/nacimiento-pop.png" alt="Nacimiento estilo pop con ojos grandes" loading="lazy"><span>Nacimiento pop</span></button>
+        <button class="tile" data-cat="navidad"><img src="assets/img/muneco-lila.png" alt="Muñeco de nieve con suéter lila y bufanda verde" loading="lazy"><span>Muñeco de nieve lila</span></button>
+        <button class="tile" data-cat="nacimientos"><img src="assets/img/nacimiento-burrito.png" alt="Nacimiento con burrito y buey" loading="lazy"><span>Nacimiento con burrito</span></button>
+        <button class="tile" data-cat="navidad"><img src="assets/img/muneco-bufanda.png" alt="Muñeco de nieve con bufanda roja" loading="lazy"><span>Muñeco de nieve</span></button>
+        <button class="tile" data-cat="nacimientos"><img src="assets/img/nacimiento-dulce.png" alt="Nacimiento de rasgos dulces" loading="lazy"><span>Nacimiento dulce</span></button>
+        <button class="tile" data-cat="nacimientos"><img src="assets/img/nacimiento-mini.png" alt="Nacimiento mini con buey y burrito" loading="lazy"><span>Nacimiento mini</span></button>
+      </div>
+    </section>
+
+    <!-- ============ NACIMIENTOS ============ -->
+    <section class="nativity" id="nacimientos">
+      <div class="nativity__sticky">
+      <div class="nativity__intro reveal">
+        <p class="eyebrow eyebrow--light">Temporada navideña</p>
+        <h2>Nacimientos que <em>pasan de generación</em> en generación.</h2>
+        <p>Cada set incluye a la Sagrada Familia y puede completarse con reyes magos, pastores, ángel y animalitos. Hazlo tuyo eligiendo el estilo y los colores.</p>
+        <a class="btn btn--gold" href="https://wa.me/51943772313?text=Hola%20Qaytu%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20nacimientos" target="_blank" rel="noopener">Consultar por un nacimiento</a>
+        <p class="nativity__hint"><span class="hint-swipe">Desliza para ver los estilos →</span><span class="hint-scroll">Sigue bajando para ver los estilos ↓</span></p>
+      </div>
+      <div class="nativity__rail" tabindex="0" aria-label="Estilos de nacimiento">
+        <figure><img src="assets/img/nacimiento-camellos.webp" alt="Nacimiento con camellos" loading="lazy"><figcaption><b>Gran nacimiento</b> con reyes, camellos y ángel</figcaption></figure>
+        <figure><img src="assets/img/nacimiento-clasico.png" alt="Nacimiento clásico" loading="lazy"><figcaption><b>Clásico</b> de colores vivos</figcaption></figure>
+        <figure><img src="assets/img/nacimiento-burrito.png" alt="Nacimiento con burrito" loading="lazy"><figcaption><b>Tradicional</b> con buey y burrito</figcaption></figure>
+        <figure><img src="assets/img/nacimiento-dulce.png" alt="Nacimiento dulce" loading="lazy"><figcaption><b>Dulce</b> con sandalias y detalles dorados</figcaption></figure>
+        <figure><img src="assets/img/nacimiento-pop.png" alt="Nacimiento pop" loading="lazy"><figcaption><b>Pop</b> de ojos grandes</figcaption></figure>
+        <figure><img src="assets/img/nacimiento-mini.png" alt="Nacimiento mini" loading="lazy"><figcaption><b>Mini</b> para espacios pequeños</figcaption></figure>
+      </div>
+      <div class="nativity__bar" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section process" id="proceso">
+      <header class="section__head reveal">
+        <p class="eyebrow">Cómo hacer tu pedido</p>
+        <h2>De una idea a tus manos, <em>en cuatro pasos.</em></h2>
+      </header>
+      <ol class="steps" data-inview>
+        <li class="step reveal">
+          <span class="step__n">1</span>
+          <h3>Escríbenos</h3>
+          <p>Cuéntanos por WhatsApp qué celebras, cuántas piezas necesitas y para cuándo.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">2</span>
+          <h3>Diseñamos juntos</h3>
+          <p>Elegimos modelo, colores y detalles. Si tienes una foto de referencia, mejor.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">3</span>
+          <h3>Tejemos</h3>
+          <p>Cada pieza se teje a mano en algodón 100%, punto por punto, sin apuro.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">4</span>
+          <h3>Coordinamos la entrega</h3>
+          <p>Te avisamos cuando esté listo y acordamos la entrega en Cajamarca.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ HISTORIA ============ -->
+    <section class="section story" id="historia">
+      <div class="story__media reveal">
+        <img src="assets/img/novios.png" alt="Pareja de novios amigurumi, él con terno negro y ella con vestido blanco y ramo de tulipanes" loading="lazy">
+        <img class="story__logo" src="assets/img/logo.png" alt="Logo de Qaytu: un gatito sobre un ovillo de lana roja" loading="lazy">
+      </div>
+      <div class="story__text reveal">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2><em>Qaytu</em> significa hilo.</h2>
+        <p>En quechua, <strong>qaytu</strong> es el hilo con el que todo empieza. Nos gustó la idea de que nuestra marca llevara ese nombre, porque eso es exactamente lo que hacemos: tomar un hilo de algodón y, con paciencia, convertirlo en algo que alguien va a guardar por años.</p>
+        <p>Tejemos desde Cajamarca, en casa, con ganchillo y mucho cuidado en cada detalle: unas mejillas sonrosadas, un borde dorado, una aureola que quede bien derechita.</p>
+        <ul class="facts">
+          <li><b>100%</b><span>algodón</span></li>
+          <li><b>A mano</b><span>cada pieza</span></li>
+          <li><b>A medida</b><span>colores y detalles</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="contacto">
+      <div class="cta__inner reveal">
+        <div class="rising" aria-hidden="true"><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i><i>♥</i></div>
+        <img src="assets/img/logo.png" alt="" class="cta__logo" loading="lazy">
+        <p class="eyebrow eyebrow--light">Pedidos por WhatsApp</p>
+        <h2>¿Qué quieres que tejamos para ti?</h2>
+        <a class="cta__phone" href="https://wa.me/51943772313?text=Hola%20Qaytu%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">943 772 313</a>
+        <p class="cta__loc">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          Cajamarca, Perú
+        </p>
+        <a class="btn btn--light" href="https://wa.me/51943772313?text=Hola%20Qaytu%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">Escribir ahora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__script">Tejido con amor, punto por punto ♥</p>
+    <p>© <span id="year">2026</span> Qaytu Amigurumi · Cajamarca · WhatsApp 943 772 313</p>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="fab" href="https://wa.me/51943772313?text=Hola%20Qaytu%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" aria-label="Escribir a Qaytu por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.2 3.6c-.5.4-1.3.1-1.3-.6V16A2.5 2.5 0 0 1 4 13.5z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Vista ampliada">
+    <button class="lightbox__close" aria-label="Cerrar">×</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Anterior">‹</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button class="lightbox__nav lightbox__next" aria-label="Siguiente">›</button>
+  </div>
+
+</body>
+</html>
